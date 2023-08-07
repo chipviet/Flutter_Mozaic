@@ -12,19 +12,19 @@ class ThemeColors {
   const ThemeColors._();
   static final lightTheme = ThemeData(
       brightness: Brightness.light,
-      fontFamily: 'Poppins',
+      fontFamily: 'Inter',
       primaryColor: primaryColor,
       backgroundColor: lightBackgroundColor,
-      scaffoldBackgroundColor: lightBackgroundColor,
+      scaffoldBackgroundColor: headerColor,
       visualDensity: VisualDensity.adaptivePlatformDensity,
       appBarTheme: AppBarTheme(
-        backgroundColor: lightBackgroundColor,
+        backgroundColor: headerColor,
       ),
       textTheme: TextTheme(button: TextStyle(color: lightTextColor)));
 
   static final darkTheme = ThemeData(
     brightness: Brightness.dark,
-    fontFamily: 'Poppins',
+    fontFamily: 'Inter',
     primaryColor: primaryColor,
     backgroundColor: darkBackgroundColor,
     scaffoldBackgroundColor: const Color(0xFF00040F),
@@ -43,16 +43,20 @@ class ThemeColors {
 extension ThemeExtras on ThemeData {
   Color get navBarColor => brightness == Brightness.light
       ? const Color(0xffF0F0F0)
-      : const Color(0xFF00040F);
+      : const Color(0xFF0D1E3D);
   //
-  Color get textColor => brightness == Brightness.light
+  Color get textColorNavbar => brightness == Brightness.light
       ? const Color(0xFF403930)
       : const Color(0xFFFFF8F2);
+        //
+  Color get textColor => brightness == Brightness.light
+      ? const Color(0xFFFFF8F2)
+      : const Color(0xFF403930);
   //
   Color get secondaryColor => const Color(0xFFFE53BB);
   //
   Gradient get serviceCard =>
-      brightness == Brightness.light ? grayWhite : grayBack;
+      brightness == Brightness.light ? grayBack : grayWhite;
 
   //
   Gradient get contactCard =>

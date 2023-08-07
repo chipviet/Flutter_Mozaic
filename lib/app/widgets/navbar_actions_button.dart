@@ -46,7 +46,7 @@ class _NavBarActionButtonState extends State<NavBarActionButton> {
             padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
             child: Text(
               widget.label,
-              style: TextStyle(color: theme.textColor),
+              style: TextStyle(color: theme.textColorNavbar),
             ),
           ),
         ),

@@ -26,7 +26,7 @@ class AppText {
 
   static init() {
     // const b = FontWeight.bold;
-    const baseStyle = TextStyle(fontFamily: 'Poppins');
+    const baseStyle = TextStyle(fontFamily: 'Inter');
 
     h1 = baseStyle.copyWith(fontSize: 22);
     h1b = h1!.copyWith(fontWeight: FontWeight.w600);

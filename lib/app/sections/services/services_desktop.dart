@@ -18,10 +18,36 @@ class ServiceDesktopState extends State<ServiceDesktop> {
           .copyWith(bottom: height * 0.2),
       child: Column(
         children: [
-          const CustomSectionHeading(text: '\nWhat I can do?'),
+          const CustomSectionHeading(text: '\n'),
+          OutlinedButton(
+            onPressed: () => (''),
+            style: OutlinedButton.styleFrom(
+              side: BorderSide(
+                color: Colors.black,
+                width: 1,
+                style: BorderStyle.solid,
+              ),
+              padding: const EdgeInsets.symmetric(horizontal: 32, vertical: 16),
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(70), // Set border radius here
+              ),
+            ),
+            child: const Padding(
+              padding: EdgeInsets.all(0.0),
+              child: Text(
+                'Automated testing',
+                style: TextStyle(
+                  fontSize: 18,
+                  color: blackColor,
+                  fontWeight: FontWeight.w400,
+                ), 
+              ),
+            ),
+          ),
+          const CustomSectionHeading(text: '\nAutomate regression and uat testing with our TAaaS!'),
           Space.y(1.w)!,
           CustomSectionSubHeading(text: servicesSubHeading),
-          Space.y(2.w)!,
+          Space.y(6.w)!,
           Wrap(
             spacing: width * 0.03,
             runSpacing: height * 0.05,

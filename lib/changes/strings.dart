@@ -16,7 +16,7 @@ String miniDescription =
     "Freelancer providing services for programming and design content needs. Join me down below and let's get started!";
 
 String servicesSubHeading =
-    "Since the beginning of my journey as a freelance designer and developer, I've worked in startups and collaborated with talented people to create digital products for both business and consumer use. I offer a wide range of services, including brand design, programming and teaching.";
+    "If you've come for Mozaic's test automation as a service (TAaaS) or help integrating automation into your QA processes, our consultants are ready to go at the drop of a bug! Build confidence into your agressive delivery schedule for both your end users and stakeholders by using automated tools for regression, unit, performance and acceptance testing.";
 //
 
 String protfolioSubHeading =

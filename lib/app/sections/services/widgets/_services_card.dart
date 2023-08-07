@@ -16,7 +16,7 @@ class _ServiceCardState extends State<_ServiceCard> {
   Widget build(BuildContext context) {
     var theme = Theme.of(context);
     return InkWell(
-      hoverColor: Colors.transparent,
+      hoverColor: Color(0xFF0D1E3D),
       splashColor: Colors.transparent,
       highlightColor: Colors.transparent,
       onTap: () {},
@@ -28,12 +28,12 @@ class _ServiceCardState extends State<_ServiceCard> {
         }
       },
       child: Container(
-        width: Responsive.isTablet(context) ? 400 : 300,
+        width: Responsive.isTablet(context) ? 600 : 400,
         // height: AppDimensions.normalize(100),
         padding: const EdgeInsets.symmetric(vertical: 20.0, horizontal: 20.0),
         decoration: BoxDecoration(
           // gradient: isHover ? pinkpurple : grayBack,
-          gradient: isHover ? pinkpurple : theme.serviceCard,
+          gradient: isHover ? grayBack : theme.serviceCard,
           borderRadius: BorderRadius.circular(15),
           boxShadow: isHover ? [primaryColorShadow] : [blackColorShadow],
         ),
@@ -42,13 +42,15 @@ class _ServiceCardState extends State<_ServiceCard> {
           children: [
             SvgPicture.asset(
               widget.service.icon,
-              height: 60,
+              height: 150,
             ),
             Space.y(3.w)!,
             Text(widget.service.name,
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   color: isHover ? whiteColor : theme.textColor,
+                  fontSize: 30,
+                  fontWeight: FontWeight.w600
                 )),
             Space.y(1.w)!,
             Text(
@@ -56,8 +58,8 @@ class _ServiceCardState extends State<_ServiceCard> {
               textAlign: TextAlign.center,
               style: TextStyle(
                 color: isHover ? whiteColor.withOpacity(0.8) : theme.textColor,
-                fontWeight: FontWeight.w200,
-                fontSize: 13,
+                fontWeight: FontWeight.w300,
+                fontSize: 18,
               ),
             ),
             Space.y(2.w)!,

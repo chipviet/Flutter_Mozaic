@@ -13,31 +13,24 @@ class ServicesUtils {
 
 List<ServicesUtils> servicesUtils = [
   ServicesUtils(
-    name: 'Android App Development',
-    icon: 'assets/icons/android.svg',
+    name: 'Selenium',
+    icon: 'assets/icons/selenium.png',
     description:
-        "Are you interested in the great Mobile app? Let's make it a reality.",
-    tool: ['Flutter', 'React Native', 'Android (Kotlin or Java)'],
+        "Selenium is an open-source automation testing tool that supports various scripting languages, including Python. It allows testers to automate interactions with web pages, perform tests on different browsers, and assess the browser's response to changes",
+    tool: [],
   ),
   ServicesUtils(
-    name: 'iOS App Development',
-    icon: 'assets/icons/apple.svg',
+    name: 'Appium',
+    icon: 'assets/icons/appinium.svg',
     description:
-        "Are you interested in the great Mobile app? Let's make it a reality.",
-    tool: ['Flutter', 'React Native'],
+        "Appium is an open-source mobile application UI testing framework that enables testers to automate the testing of native, hybrid, and web applications on various platforms such as Android, iOS, and Windows. It offers a unified API and supports cross-platform application testing, allowing testers to write test scripts that work seamlessly on multiple platforms",
+    tool: [],
   ),
   ServicesUtils(
-    name: 'UI/UX Designing',
-    icon: 'assets/icons/graphic.svg',
+    name: 'Browserstack',
+    icon: 'assets/icons/appinium.svg',
     description:
-        "I'm creating elegant designs suited to your needs following core design theory. ",
-    tool: ['Adobe XD', 'Figma', 'Photoshop'],
-  ),
-  ServicesUtils(
-    name: 'Web Development',
-    icon: 'assets/icons/website.svg',
-    description:
-        "Do you have an idea for your next great website? Let's make it a reality.",
-    tool: ['Flutter', 'Html,css,js', 'Android (Kotlin or Java)'],
+        "BrowserStack is a cloud web and mobile testing platform that offers developers the ability to test their websites and mobile applications across various browsers, operating systems, and real mobile devices on-demand. It was founded in 2011 by Ritesh Arora and Nakul Aggarwal in Mumbai, India",
+    tool: [],
   ),
 ];

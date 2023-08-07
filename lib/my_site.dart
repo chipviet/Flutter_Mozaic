@@ -1,3 +1,5 @@
+import 'dart:js_interop';
+
 import 'package:flutter/material.dart';
 import 'package:mysite/core/configs/configs.dart';
 import 'package:mysite/core/configs/connection/bloc/connected_bloc.dart';
@@ -28,7 +30,7 @@ class MySite extends StatelessWidget {
           return Sizer(builder: (context, orientation, deviceType) {
             return MaterialApp(
               debugShowCheckedModeBanner: false,
-              title: 'Sudesh',
+              title: 'Mozaic',
               theme: AppTheme.themeData(state.isDarkThemeOn, context),
               initialRoute: "/",
               routes: {"/": (context) => const NChecking()},

@@ -28,16 +28,16 @@ class _NavbarDesktopState extends State<_NavbarDesktop> {
                   ),
                 ),
             // Space.x!,
-            InkWell(
-                onTap: () {
-                  context.read<ThemeCubit>().updateTheme(!state.isDarkThemeOn);
-                },
-                child: Image.network(
-                  state.isDarkThemeOn ? IconUrls.darkIcon : IconUrls.lightIcon,
-                  height: 30,
-                  width: 30,
-                  color: state.isDarkThemeOn ? Colors.black : Colors.white,
-                )),
+            // InkWell(
+            //     onTap: () {
+            //       context.read<ThemeCubit>().updateTheme(!state.isDarkThemeOn);
+            //     },
+            //     child: Image.network(
+            //       state.isDarkThemeOn ? IconUrls.darkIcon : IconUrls.lightIcon,
+            //       height: 30,
+            //       width: 30,
+            //       color: state.isDarkThemeOn ? Colors.black : Colors.white,
+            //     )),
             // Space.x!,
           ],
         ),

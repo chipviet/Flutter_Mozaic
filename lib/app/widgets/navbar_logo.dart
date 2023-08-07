@@ -11,20 +11,15 @@ class NavBarLogo extends StatelessWidget {
     var theme = Theme.of(context);
     //
     var textSty = TextStyle(
-      color: theme.textColor,
-      fontWeight: FontWeight.w100,
+      color: theme.textColorNavbar,
+      fontWeight: FontWeight.w700,
       fontSize: Responsive.isDesktop(context) ? 32 : 20,
     );
 
     return Row(
       mainAxisSize: MainAxisSize.min,
       children: [
-        Text("< ", style: textSty),
-        Text("Sudesh", style: textSty),
-        Text(
-          Responsive.isDesktop(context) ? " />\t\t" : " />",
-          style: textSty,
-        )
+        Text("Mozaic", style: textSty),
       ],
     );
   }

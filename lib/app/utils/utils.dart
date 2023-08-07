@@ -7,11 +7,11 @@ import 'package:mysite/app/widgets/footer.dart';
 
 class BodyUtils {
   static const List<Widget> views = [
-    HomePage(),
+    // HomePage(),
     // About(),
     Services(),
-    Portfolio(),
-    Contact(),
-    Footer(),
+    // Portfolio(),
+    // Contact(),
+    // Footer(),
   ];
 }
